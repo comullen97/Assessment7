@@ -1,0 +1,14 @@
+Array Size         append         insert
+tiny            81.1µs          60µs
+small           15.8µs          18.7µs
+medium          39.5µs          149.1µs
+large           465.3µs         8.7963ms
+extralarge      2.7673ms        1.0051923s
+
+
+When doing this assessment and I ran the inital node runtime.js function, I
+had the initial readings of the append function having a 982.1202ms and 2.8614ms for the insert
+function. I was expecting the append function with .push to run faster since .unshift has a longer run time
+especially with larger array sizes. In the table however it is showing that
+the insert function with the .unshift had a drastically longer runtime compared to
+the append function, and it also got longer time as the array size grew.
